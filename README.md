@@ -2,7 +2,14 @@
 
 Predicting customer churn: LogisticRegression, RandomForest
 
-The Indian telecommunications (telecom) industry is undergoing significant transformation, with an increasing number of telecom companies entering the market and a growing trend of customers switching between service providers. Customer "churn" refers to the phenomenon where users discontinue a company's services or products. For telecom companies, understanding the factors that contribute to customer retention is vital for improving service quality and boosting customer satisfaction. As the data scientist leading this project, your goal is to analyze the complex interplay of customer behavior and demographics in the Indian telecom landscape to predict churn. This analysis will leverage two extensive datasets from four leading telecom providers: Airtel, Reliance Jio, Vodafone, and BSNL.
+The Indian telecommunications (telecom) industry is undergoing significant transformation, with an increasing number of telecom companies entering the market and a growing trend of customers switching between service providers. Customer "churn" refers to the phenomenon where users discontinue a company's services or products. For telecom companies, understanding the factors that contribute to customer retention is vital for improving service quality and boosting customer satisfaction. For the data scientist, leading this project, the goal is to analyze the complex interplay of customer behavior and demographics in the Indian telecom landscape to predict churn. This analysis will leverage two extensive datasets from four leading telecom providers: Airtel, Reliance Jio, Vodafone, and BSNL.
+
+## Project Instructions
+Does Logistic Regression or Random Forest produce a higher accuracy score in predicting telecom churn in India?
+- Load the two CSV files into separate DataFrames. Merge them into a DataFrame named `churn_df`. Calculate and print churn rate, and identify the categorical variables in `churn_df`.
+- Convert categorical features in `churn_df` into `features_scaled`. Perform feature scaling separating the appropriate features and scale them. Define scaled features and target variable for the churn prediction model.
+- Train Logistic Regression and Random Forest Classifier models, setting a random seed of 42. Store model predictions in `logreg_pred` and `rf_pred`.
+- Assess the models on test data. Assign the model's name with higher accuracy (`"LogisticRegression"` or `"RandomForest"`) to `higher_accuracy`.
 
 - `telecom_demographics.csv` contains information related to Indian customer demographics:
 
